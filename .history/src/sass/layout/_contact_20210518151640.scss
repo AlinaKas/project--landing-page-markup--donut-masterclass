@@ -1,0 +1,66 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+padding-bottom: 47px;
+
+@media screen and (min-width: 768px) {
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 1280px) {
+  padding-bottom: 82px;
+}
+  }
+
+.contact__lable {
+  text-align: center;
+  font-family: $alternative-font-regular;
+  @include fonts(400, 16px, 4.06);
+  color: $main-text-cr;
+
+  @media screen and (min-width: 1280px) {
+    @include fonts(400, 18px, 3.61);
+  }
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 37px 0;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 0 27px 0;
+}
+}
+
+.contact__form-field {
+   width: 230px;
+  @include fonts(400, 16px, 1.25);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ab816c;
+  background: transparent;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  &::-webkit-input-placeholder {
+    color: rgba(171, 129, 108, 0.5);
+   }
+
+   @media screen and (min-width: 768px) {
+    width: 410px;
+}
+@media screen and (min-width: 1280px) {
+  width: 430px;
+}
+}

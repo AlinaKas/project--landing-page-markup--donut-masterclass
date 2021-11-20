@@ -1,0 +1,47 @@
+.common_up {
+  background-image: url(../images/mobile/hero_donut_masterclass/mobile-header-donuts.png),
+    url(../images/mobile/header-bg/mobile-header-bg.png);
+  background-position: top 0 left 0, top 0 center;
+  background-size: 130px auto, 100% 460px;
+  background-repeat: no-repeat;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and(min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/hero_donut_masterclass/mobile-header-donuts@2x.png),
+      url(../images/mobile/header-bg/mobile-header-bg@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/hero_donut_masterclass/tablet-header-donuts.png),
+      url(../images/tablet/header-bg/tablet-header-bg.png);
+    background-size: 378px auto, 100% 622px;
+    background-position: top 0 right 137px, top 0 right 0;
+    background-repeat: no-repeat;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and(min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/hero_donut_masterclass/tablet-header-donuts@2x.png),
+        url(../images/tablet/header-bg/tablet-header-bg@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/desktop/hero_donut_masterclass/desktop-header-spoon.png),
+      url(../images/desktop/hero_donut_masterclass/desktop-header-donuts.png),
+      url(../images/desktop/header-bg/desktop-header-bg.png);
+    max-width: 1920px;
+    background-size: 178px auto, 723px auto, 100% 1035px;
+    background-position: top 166px right 100%, top 0 right 0, top 0 center;
+    background-repeat: no-repeat;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and(min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/hero_donut_masterclass/desktop-header-spoon@2x.png),
+        url(../images/desktop/hero_donut_masterclass/desktop-header-donuts@2x.png),
+        url(../images/desktop/header-bg/desktop-header-bg@2x.png);
+    }
+  }
+}

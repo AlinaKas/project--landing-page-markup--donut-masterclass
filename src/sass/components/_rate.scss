@@ -1,0 +1,12 @@
+.rate__list {
+  display: flex;
+  list-style-type: none;
+  margin-top: 6px;
+  justify-content: center;
+}
+.rate__item {
+  margin-right: 4px;
+  &:nth-child(5) {
+    margin-right: 0;
+  }
+}

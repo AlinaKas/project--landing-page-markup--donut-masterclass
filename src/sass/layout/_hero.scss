@@ -1,0 +1,74 @@
+.hero-section {
+  margin-bottom: -23px;
+  padding-top: 33px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 70px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+  }
+}
+
+.hero__title {
+  max-width: 224px;
+  width: 100%;
+  margin-bottom: 3px;
+  font-family: $title-font;
+  @include fonts(400, 30px, 1.27);
+  color: $main-text-cr;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 490px;
+    margin-bottom: 15px;
+    @include fonts(400, 64px, 1.02);
+  }
+}
+
+.hero__label {
+  margin-bottom: 37px;
+  font-family: $alternative-font-regular;
+  @include fonts(500, 16px, 1.25);
+  text-align: center;
+  color: $main-text-cr;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 30px;
+    @include fonts(500, 24px, 1.21);
+  }
+}
+
+.hero__btn {
+  margin-bottom: 45px;
+  -webkit-appearance: button;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 65px;
+  }
+}

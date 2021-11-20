@@ -1,0 +1,9 @@
+@mixin fonts($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+@mixin icon_size($w, $h) {
+  width: $w;
+  height: $h;
+}

@@ -1,0 +1,39 @@
+/*НАЗНАЧЕНИЕ ПАРШАЛОВ*/
+// reset - зброс стилей
+// palette - палитра проэкта
+// variables - переменные
+// common - формулы flex и контейенр
+// mixins - миксины
+// placeholders - плейсхолдеры
+// logo - логотип сайта
+// button - стили кнопок(в макете они все одинвковые разный только текст)
+// social_icons - стили иконок соц. сетей
+
+@import './base/fonts';
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+
+@import './base/common';
+@import './base/container';
+@import './components/logo';
+@import './components/section-title';
+@import './components/button';
+@import './components/social_icons';
+@import './components/rate';
+@import './components/icon-stars';
+@import './components/modal';
+@import './layout/header';
+@import './layout/menu';
+@import './layout/header_bg';
+
+@import './layout/hero';
+@import './layout/about_us';
+
+@import './layout/contact';
+@import './layout/footer';
+@import './layout/footer-bg';
+@import './layout/reviews';
+@import './layout/program';
+@import './layout/registration';

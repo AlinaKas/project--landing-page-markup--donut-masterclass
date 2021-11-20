@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+}
+
+.header-section {
+  position: relative;
+}
+
+.header__button {
+  position: absolute;
+  z-index: 100;
+  top: 15px;
+  right: 15px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus .header__button-icon {
+    fill: $additional-cr;
+    color: $additional-cr;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 25px;
+    right: 67px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.header__button-icon {
+  fill: $main-text-cr;
+}
+
+.header__icon-close {
+  display: none;
+  width: 18px;
+  height: 18px;
+
+  .header__button.is-open & {
+    display: block;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.header__icon-burger {
+  width: 30px;
+  height: 16px;
+
+  .header__button.is-open & {
+    display: none;
+  }
+}

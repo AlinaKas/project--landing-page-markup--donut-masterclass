@@ -1,0 +1,241 @@
+.program {
+  padding-bottom: 18px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 68px;
+  }
+}
+
+.program__container {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+}
+
+.grid__item:nth-child(even) {
+  margin-top: 70px;
+
+  @media screen and (min-width: 456px) and (max-width: 767.98px) {
+    margin-left: 70px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 41px;
+  }
+}
+
+.grid__item:nth-child(odd) {
+  margin-top: 30px;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 0px;
+  }
+}
+
+.program__content-box {
+  &:last-child {
+    transform: translateY(0px);
+    padding-bottom: 0px;
+
+    @media screen and (min-width: 768px) {
+      transform: translateY(10px);
+      padding-bottom: 65px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      transform: translateY(41px);
+      padding-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 392px;
+  }
+}
+
+.program__item {
+  text-align: center;
+  width: 142px;
+  height: 142px;
+  background-color: $alternative-bg-cr;
+  box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+  border: none;
+  border-radius: 50%;
+
+  @media screen and (min-width: 1280px) {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.program-card__title {
+  font-family: $title-font;
+  @include fonts(400, 18px, 1.27);
+  text-align: center;
+  color: $programs-text-cr;
+
+  @media screen and (min-width: 1280px) {
+    @include fonts(400, 24px, 1.25);
+  }
+}
+
+.program-card__text {
+  font-family: $alternative-font-regular;
+  @include fonts(400, 14px, 1.21);
+  text-align: center;
+  color: $main-text-cr;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  @media screen and (min-width: 1280px) {
+    @include fonts(400, 16px, 1.25);
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.program__item-text {
+  padding-top: 21px;
+  padding-bottom: 0px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 21px;
+  }
+}
+
+.program__text {
+  padding-bottom: 15px;
+
+  &::before {
+    content: '> ';
+  }
+
+  &:last-child {
+    margin-bottom: -15px;
+  }
+}
+
+.program__img-wrap {
+  display: flex;
+  justify-content: center;
+  transform: translateY(-37px);
+
+  @media screen and (min-width: 1280px) {
+    transform: translateY(-47px);
+  }
+}
+
+.program__text-label {
+  font-family: $title-font;
+  @include fonts(400, 18px, 3.61);
+  text-align: center;
+  color: $additional-cr;
+  text-decoration: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.program__text-wrap {
+  @media screen and (min-width: 768px) {
+    max-width: 336px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 392px;
+  }
+
+  &--textblock-hidden {
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+
+  &--textblock-visable {
+    @media screen and (max-width: 1279.98px) {
+      display: none;
+    }
+    @media screen and (min-width: 1280px) {
+      display: block;
+    }
+  }
+}
+
+.program-card {
+  transform: translateY(-30px);
+
+  @media screen and (min-width: 1280px) {
+    transform: translateY(-40px);
+  }
+}
+
+.program-card__icon {
+  fill: $programs-icons-cr;
+}
+
+.icon-chef-hat {
+  width: 19px;
+  height: 18px;
+
+  @media screen and (min-width: 1280px) {
+    width: 25px;
+    height: 23px;
+  }
+}
+
+.icon-people {
+  width: 20px;
+  height: 18px;
+
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 23px;
+  }
+}
+
+.icon-clock {
+  width: 20px;
+  height: 20px;
+
+  @media screen and (min-width: 1280px) {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.icon-chat {
+  width: 25px;
+  height: 17px;
+
+  @media screen and (min-width: 1280px) {
+    width: 31px;
+    height: 21px;
+  }
+}

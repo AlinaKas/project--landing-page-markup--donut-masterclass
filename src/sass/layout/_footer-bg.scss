@@ -1,0 +1,47 @@
+.common_down {
+  background-image: url(../images/mobile/contact/mobile-footer-spoon-and-flour.png),
+    url(../images/mobile/footer-bg/mobile-footer-bg.png);
+  background-position: bottom 0 right 0, bottom 210px center;
+  background-size: 113px auto, 100% 1215px;
+  background-repeat: no-repeat;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and(min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/contact/mobile-footer-spoon-and-flour@2x.png),
+      url(../images/mobile/footer-bg/mobile-footer-bg@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/registration/tablet-footer-confetti.png),
+      url(../images/tablet/contact/tablet-footer-spoon-and-flour.png),
+      url(../images/tablet/footer-bg/tablet-footer-bg.png);
+    background-position: bottom 300px right 0, bottom 0 right 0, bottom 60px center;
+    background-size: 300px auto, 207px auto, 100% 1260px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and(min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/registration/tablet-footer-confetti@2x.png),
+        url(../images/tablet/contact/tablet-footer-spoon-and-flour@2x.png),
+        url(../images/tablet/footer-bg/tablet-footer-bg@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/desktop/registration/desktop-footer-confetti.png),
+      url(../images/desktop/contact/desktop-footer-spoon-and-flour.png),
+      url(../images/desktop/footer-bg/desktop-footer-bg.png);
+    max-width: 1920px;
+    background-position: bottom 270px right 0, bottom 0 right 0, bottom 0 center;
+    background-size: 550px auto, 362px auto, 100% 1500px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and(min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/registration/desktop-footer-confetti@2x.png),
+        url(../images/desktop/contact/desktop-footer-spoon-and-flour@2x.png),
+        url(../images/desktop/footer-bg/desktop-footer-bg@2x.png);
+    }
+  }
+}

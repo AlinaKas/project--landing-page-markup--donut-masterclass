@@ -1,0 +1,55 @@
+.logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+  fill: $main-text-cr;
+}
+
+.header__logo {
+  padding-top: 7px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    padding-top: 27px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 30px;
+    margin-right: 30px;
+  }
+}
+
+.header__logo-icon {
+  width: 96px;
+  height: 43px;
+  fill: $main-text-cr;
+
+  .header__logo:hover,
+  .header__logo:focus & {
+    fill: $additional-cr;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 158px;
+    height: 71px;
+  }
+}
+
+.menu__logo {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.menu__logo-icon {
+  width: 190px;
+  height: 85px;
+
+  .menu__logo:hover,
+  .menu__logo:focus & {
+    fill: $additional-cr;
+  }
+}

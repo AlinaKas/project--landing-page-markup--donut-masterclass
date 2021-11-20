@@ -1,0 +1,29 @@
+.section__title {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2.71;
+  color: $main-text-cr;
+
+  @media screen and (max-width: 767.98px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 1.81;
+    margin-bottom: 10px;
+  }
+}
+.reviews__title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 2.7;
+  font-family: Caveat Brush;
+  font-weight: normal;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 1.8;
+  }
+}
